@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Practice</string>
+    <string name="companyName">Company Name!</string>
+    <string name="inputEmail">Email</string>
+    <string name="inputPassword">Password</string>
+    <string name="inputRetypePassword">Re-type Password</string>
+    <string name="btnAlreadyHaveAnAccount">Already have an account? Log in</string>
+    <string name="AlreadyHaveAnAccountMessage">Already have an Account?</string>
+    <string name="tvTechTally">TechTally</string>
+    <string name="tvLogo">Logo here</string>
+    <string name="tvShare">Share.</string>
+    <string name="tvReview">Review</string>
+    <string name="tvDiscover">Discover.</string>
+    <string name="tvReviews">Review.</string>
+    <string name="tvLogoHere3">LOGO HERE</string>
+    <string name="tvWelcomeBack">Welcome Back!</string>
+    <string name="messageSRD">Share.Review.Discover</string>
+    <string name="tvForgotPassword">Forgot Password?</string>
+    <string name="messageDHAASU">Don\'t have an account?</string>
+    <string name="messageWelcomeToTechTally">Welcome To TechTally!</string>
+    <string name="messageLGYAS">Let\'s get your account started!</string>
+    <string name="messageIHRAATTTAC">I have read and agree to the terms and conditions</string>
+    <string name="messagesIHRAATTTAC">I have read and agree to the terms and conditions</string>
+</resources>

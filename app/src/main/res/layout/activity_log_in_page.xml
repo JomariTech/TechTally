@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LogInPage">
+
+    <TextView
+        android:id="@+id/tvWelcomeBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tvWelcomeBack"
+        android:textColor="#1E1E1E"
+        android:textSize="27sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.329" />
+
+    <TextView
+        android:id="@+id/tvSRD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/messageSRD"
+        android:textColor="#1E1E1E"
+        android:textSize="9sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.36" />
+
+    <TextView
+        android:id="@+id/tvForgotPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tvForgotPassword"
+        android:textColor="#1E1E1E"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.57" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layoutLogInName"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="1dp"
+        android:hint="Email or Username"
+        android:textColorHint="#1E1E1E"
+        app:boxBackgroundColor="@color/white"
+        app:boxBackgroundMode="outline"
+        app:boxStrokeColor="@color/black"
+        app:boxStrokeErrorColor="@color/design_default_color_error"
+        app:boxStrokeWidth="3dp"
+        app:boxStrokeWidthFocused="3dp"
+        app:endIconMode="clear_text"
+        app:hintTextColor="#1E1E1E"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.41000003"
+        app:startIconDrawable="@drawable/baseline_person_24">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etLogInName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text|textWebEmailAddress"
+            android:textColor="#1E1E1E"
+            android:textColorHint="#1E1E1E"
+            android:textSize="12sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layoutLogInPassword"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:textColorHint="#1E1E1E"
+        app:boxBackgroundColor="@color/white"
+        app:boxBackgroundMode="outline"
+        app:boxStrokeColor="@color/black"
+        app:boxStrokeWidth="3dp"
+        app:boxStrokeWidthFocused="3dp"
+        app:counterEnabled="true"
+        app:counterMaxLength="16"
+        app:endIconMode="password_toggle"
+        app:hintTextColor="#1E1E1E"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.53"
+        app:startIconDrawable="@drawable/baseline_lock_24">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/layoutLogInPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FFFFFF"
+            android:inputType="text|textPassword"
+            android:textColor="#1E1E1E"
+            android:textSize="12sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageView
+        android:id="@+id/ivLogo3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.176"
+        app:srcCompat="@mipmap/ic_launchers_foreground" />
+
+    <Button
+        android:id="@+id/btnLogIn2"
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#1E1E1E"
+        android:text="Log in"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.528"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.651" />
+
+    <TextView
+        android:id="@+id/tvOrLogInWith2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="--------Or log in with--------"
+        android:textColor="#1E1E1E"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.525"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.717" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

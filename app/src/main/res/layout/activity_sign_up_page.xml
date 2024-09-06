@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpPage">
+
+    <TextView
+        android:id="@+id/tvWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/messageWelcomeToTechTally"
+        android:textColor="#1E1E1E"
+        android:textSize="27sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.41"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.28" />
+
+    <TextView
+        android:id="@+id/tvLGYAS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/messageLGYAS"
+        android:textColor="#1E1E1E"
+        android:textSize="9sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.31" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layoutetSignUp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+        android:textColorHint="#1E1E1E"
+        app:boxBackgroundColor="@color/white"
+        app:boxBackgroundMode="outline"
+        app:boxStrokeColor="@color/black"
+        app:boxStrokeWidth="3dp"
+        app:boxStrokeWidthFocused="3dp"
+        app:endIconMode="clear_text"
+        app:hintTextColor="#1E1E1E"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.36"
+        app:startIconDrawable="@drawable/baseline_person_24">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text|textEmailAddress"
+            android:textColor="#1E1E1E"
+            android:textSize="12sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layoutetESU"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:textColorHint="#1E1E1E"
+        app:boxBackgroundColor="@color/white"
+        app:boxBackgroundMode="outline"
+        app:boxStrokeColor="@color/black"
+        app:boxStrokeWidth="3dp"
+        app:endIconMode="clear_text"
+        app:hintTextColor="#1E1E1E"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.44"
+        app:startIconDrawable="@drawable/baseline_email_24">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etESU"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text|textWebEmailAddress"
+            android:textColor="#1E1E1E"
+            android:textSize="12sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layoutetPSU"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:textColorHint="#1E1E1E"
+        app:boxBackgroundColor="@color/white"
+        app:boxBackgroundMode="outline"
+        app:boxStrokeColor="@color/black"
+        app:boxStrokeWidth="3dp"
+        app:boxStrokeWidthFocused="3dp"
+        app:counterEnabled="true"
+        app:counterMaxLength="16"
+        app:endIconMode="password_toggle"
+        app:hintTextColor="#1E1E1E"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.53"
+        app:startIconDrawable="@drawable/baseline_lock_24">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etPSU"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text|textPassword"
+            android:textColor="#1E1E1E"
+            android:textSize="12sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layoutetRTPSU"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Re-type password"
+        android:textColorHint="#1E1E1E"
+        app:boxBackgroundColor="@color/white"
+        app:boxBackgroundMode="outline"
+        app:boxStrokeColor="@color/black"
+        app:boxStrokeWidth="3dp"
+        app:boxStrokeWidthFocused="3dp"
+        app:counterEnabled="true"
+        app:counterMaxLength="16"
+        app:endIconMode="password_toggle"
+        app:hintTextColor="#1E1E1E"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.62"
+        app:startIconDrawable="@drawable/baseline_lock_24">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etRTPSU"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text|textPassword"
+            android:textColor="#1E1E1E"
+            android:textColorHint="#1E1E1E"
+            android:textSize="12sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnCreateAccount"
+        android:layout_width="300sp"
+        android:layout_height="45sp"
+        android:backgroundTint="@color/black"
+        android:text="Create Account"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.500"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.69" />
+
+    <ImageView
+        android:id="@+id/ivLogo4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.123"
+        app:srcCompat="@mipmap/ic_launchers_foreground" />
+
+    <TextView
+        android:id="@+id/tv0rRegisterWith2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="--------Or register with--------"
+        android:textColor="#1E1E1E"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.73" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
